@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MinhaAPICore.Controllers
 {
@@ -12,7 +9,7 @@ namespace MinhaAPICore.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<string>> ObterTodos()
         {
             return new string[] { "value1", "value2" };
         }
